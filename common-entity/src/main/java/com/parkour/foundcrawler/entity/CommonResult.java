@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author parkour
+ * @author com.parkour
  * 传递给前端的公共实体类
  */
 @Data

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @author parkour
+ * @author com.parkour
  * 基金表
  */
 @Data

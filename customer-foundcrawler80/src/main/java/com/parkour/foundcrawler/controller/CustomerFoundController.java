@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 import javax.annotation.Resource;
 
 /**
- * @author parkour
+ * @author com.parkour
  */
 @RestController
 @Slf4j
@@ -20,17 +20,17 @@ public class CustomerFoundController {
     @Resource
     RestTemplate restTemplate;
 
-    private static final String PAYMENT_URL = "http://localhost:8001";
+    private static final String PROVIDER_FOUNDCRAWLER_URL = "http://PROVIDER-FOUNDCRAWLER";
 
     @GetMapping(value = "/consumer/found/insertFound")
     public CommonResult insertFound(Found found) {
-        return restTemplate.postForObject(PAYMENT_URL + "/provider/found/insertFound", found, CommonResult.class);
+        return restTemplate.postForObject(PROVIDER_FOUNDCRAWLER_URL + "/provider/found/insertFound", found, CommonResult.class);
     }
 
 
     @GetMapping(value = "/consumer/found/selectFoundByFoundCode/{foundCode}")
     public CommonResult selectFoundByFoundCode(@PathVariable("foundCode") String foundCode) {
-        return restTemplate.getForObject(PAYMENT_URL + "/provider/found/selectFoundByFoundCode/" + foundCode, CommonResult.class);
+        return restTemplate.getForObject(PROVIDER_FOUNDCRAWLER_URL + "/provider/found/selectFoundByFoundCode/" + foundCode, CommonResult.class);
     }
 
 }
