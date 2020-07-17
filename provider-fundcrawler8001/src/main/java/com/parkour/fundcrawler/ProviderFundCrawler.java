@@ -1,0 +1,18 @@
+package com.parkour.fundcrawler;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+/**
+ * @author com.parkour
+ */
+@SpringBootApplication
+@EnableEurekaClient
+@EnableDiscoveryClient
+public class ProviderFundCrawler {
+    public static void main(String[] args) {
+        SpringApplication.run(ProviderFundCrawler.class, args);
+    }
+}

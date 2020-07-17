@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.parkour.fundcrawler.dao.FundDao">
+
+    <resultMap id="baseResultMap" type="com.parkour.fundcrawler.entity.Fund">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="fundcode" property="fundcode" jdbcType="VARCHAR"/>
+        <result column="fundname" property="fundname" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="insertFund" useGeneratedKeys="true" keyProperty="id">
+        insert into fundcrawler.fund(fundcode, fundname)
+        values (#{fundcode}, #{fundname})
+    </insert>
+
+    <select id="selectFundByFundCode" resultMap="baseResultMap">
+        select *
+        from fundcrawler.fund
+        where fundcode = #{fundCode}
+    </select>
+
+</mapper>

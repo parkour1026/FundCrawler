@@ -4,22 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.parkour</groupId>
-    <artifactId>foundcrawler</artifactId>
+    <artifactId>fundcrawler</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>common-entity</module>
-        <module>provider-foundcrawler8001</module>
-        <module>provider-foundcrawler8002</module>
-        <module>zookeper-provider-foundcrawler8003</module>
-        <module>customer-foundcrawler81</module>
+        <module>provider-fundcrawler8001</module>
+        <module>provider-fundcrawler8002</module>
+        <module>zookeper-provider-fundcrawler8003</module>
+        <module>customer-fundcrawler81</module>
         <module>eureka-server7001</module>
         <module>eureka-server7002</module>
-        <module>zookeeper-customer-foundcrawler83</module>
-        <module>consul-provider-foundcrawler8004</module>
-        <module>consul-customer-foundcrawler84</module>
-        <module>nacos-provider-foundcrawler9001</module>
-        <module>nacos-provider-foundcrawler9002</module>
-        <module>nacos-customer-foundcrawler91</module>
+        <module>zookeeper-customer-fundcrawler83</module>
+        <module>consul-provider-fundcrawler8004</module>
+        <module>consul-customer-fundcrawler84</module>
+        <module>nacos-provider-fundcrawler9001</module>
+        <module>nacos-provider-fundcrawler9002</module>
+        <module>nacos-customer-fundcrawler91</module>
         <module>nacos-config-client901</module>
     </modules>
     <packaging>pom</packaging>

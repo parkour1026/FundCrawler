@@ -6,8 +6,8 @@
 .idea
 *.iml
 common-entity/target
-customer-foundcrawler80/target
-provider-foundcrawler8001/target
+customer-fundcrawler80/target
+provider-fundcrawler8001/target
 out
 gen
 ### Java template
